@@ -5,23 +5,51 @@
 }
 
 body {
+    margin: 2px;
+    padding: 0;
     font-family: 'Departure Mono Regular', monospace;
-    font-size: 16px;
-    background-color: hsl(255, 0%, 0%);
+    font-size: 18px;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+
+main {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 100vh;
+    background-color: hsl(0, 0%, 5%, 90%);
+    border: 2px solid hsl(0, 0%, 100%, 0.5);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-topright: 25px;
+    backdrop-filter: blur(20px);
+    width: 90%;
+    /*max-width: 90%;*/
+
 }
 
 p {
     color: hsl(0, 0%, 100%);
+
 }
 
 header {
     color: hsl(0, 0%, 100%);
     text-align: center;
     margin: 50px auto;
-    max-width: 30%;
+    max-width: 50%;
 }
 
-h2 {
+h3 {
+    margin-top: -10px;
     color: hsl(0, 0%, 100%);
     text-align: center;
 
@@ -31,16 +59,18 @@ h2 {
 a {
     color: hsl(0, 0%, 100%);
     margin: 10px;
+    text-decoration: none;
 }
 
 a:hover {
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 80%);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 a:active {
-    color: hsl(255, 100%, 90%);
+    color: hsl(255, 100%, 85%);
 }
-
 
 hr {
     color: hsl(0, 0%, 50%);
@@ -57,17 +87,32 @@ hr {
 
 /* navigation bar start*/
 nav {
+    background-color: hsla(0, 0%, 0%, 0.3);
+    backdrop-filter: blur(2px);
+    backdrop-filter: ;
+    position: sticky;
+    top: 17px;
+    z-index: 1000;
     text-align: center;
-    margin: 20px auto;
+    margin: -2px auto;
     padding: 10px 15px;
     width: fit-content;
     max-width: 80%;
-    outline: hsl(0, 0%, 100%) solid medium;
+    border: 2px solid hsl(0, 0%, 30%);
+    border-radius: 5px;
+
 }
+
 
 nav a {
     text-decoration: none;
 }
+
+nav a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 /* navigation bar end*/
 
 
@@ -75,24 +120,35 @@ nav a {
 .start-page p {
     text-align: center;
     margin: 20px auto;
-    max-width: 30%;
+    max-width: 50%;
 }
+
+/* about page */
+.about p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 50%;
+}
+
+/* projects page */
+.projects p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 50%;
+}
+
+
 
 /* Socials */
-
-
-
-.box-title {
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
-}
 
 .socials-box {
     text-align: left;
     margin: 40px auto;
     padding: 10px 15px;
+    height: fit-content;
     width: fit-content;
     max-width: 80%;
-    outline: hsl(0, 0%, 100%) dashed thin;
+    border: 1px dashed hsl(0, 0%, 100%);
+    border-radius: 10px;
+
 }
